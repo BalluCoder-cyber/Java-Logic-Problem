@@ -10,28 +10,28 @@ public class SumOfDigit {
 //    }
 
     // METHOD APPROACH...
-    public static void sOfDigit(int n){
-        int sum =0;
-        while (n!=0) {
-            int r = n % 10;
-            sum = sum + r;
-            n = n / 10;
-        }
-        System.out.println(sum);
-    }
-    public static void main (String[] args){
-        // FIRST APPROACH....
-//        int num = 565214;
-//        String str = String.valueOf(num);
-//        int [] digit = new int[str.length()];
-//        int sum=0;
-//        for(int i=0; i<str.length(); i++){
-//            digit[i] = Character.getNumericValue(str.charAt(i));
-//             sum += digit[i];
+//    public static void sOfDigit(int n){
+//        int sum =0;
+//        while (n!=0) {
+//            int r = n % 10;
+//            sum = sum + r;
+//            n = n / 10;
 //        }
 //        System.out.println(sum);
+//    }
+    public static void main (String[] args){
+        // FIRST APPROACH....
+        int num = 565214;
+        String str = String.valueOf(num);
+        int [] digit = new int[str.length()];
+        int sum=0;
+        for(int i=0; i<str.length(); i++){
+            digit[i] = Character.getNumericValue(str.charAt(i));
+             sum += digit[i];
+        }
+        System.out.println(sum);
 
 
-       sOfDigit(5885);
+      // sOfDigit(5885);
     }
 }
